@@ -3,15 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | UX/UI Product Designer</title>
-  <meta name="description" content="Portfolio of Your Name, UX/UI product designer.">
+  <title>Khadija Tahir | UX Research, Design and Product</title>
+  <meta name="description" content="Portfolio of Khadija Tahir: UX research, design and product work.">
+  <!-- Security: only load files from this site. Remove nothing here unless you add outside scripts or fonts. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; form-action 'none'; base-uri 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
-<body>
+<body id="top">
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap bar">
+      <!-- Home button: large in the hero, shrinks into the corner on scroll -->
+      <a class="avatar" href="#top" aria-label="Back to top">
+        <img src="assets/images/photo.webp" alt="" width="600" height="600" decoding="async" fetchpriority="high">
+      </a>
+      <span class="avatar-anchor" aria-hidden="true"></span>
+      <nav aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume<span class="sr-only"> (PDF, opens in a new tab)</span></a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>Your Name</h1>
-    <p>UX/UI product designer. Portfolio coming soon.</p>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="photo-slot" aria-hidden="true"></div>
+      <div class="hero-text">
+        <h1 class="hero-title" id="hero-title" data-roles="a UX researcher|a product designer|an aspiring product manager">
+          <span class="line">I’m Khadija Tahir,</span>
+          <span class="line role">
+            <span class="static">a UX researcher, UX designer, product designer, and aspiring product manager.</span>
+            <span class="typed-wrap" aria-hidden="true"><span id="typed"></span><span class="cursor"></span></span>
+          </span>
+        </h1>
+        <p class="intro">I study how people use products, then design and shape the ones that work better for them. Currently looking for internships in UX research, design, and product management.</p>
+        <p class="actions">
+          <a class="btn" href="#work">See my work</a>
+          <a href="#contact">Get in touch</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Work</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by type" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="research" aria-pressed="false">Research</button>
+        <button type="button" data-filter="design" aria-pressed="false">Design</button>
+        <button type="button" data-filter="product" aria-pressed="false">Product</button>
+      </div>
+      <p class="sr-only" id="filter-status" role="status"></p>
+
+      <ul class="grid" role="list">
+        <!-- Copy one <li> per project. data-tags: research, design, product (space separated). -->
+        <li class="card" data-tags="research design">
+          <img src="assets/images/project-1.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+          <div class="card-body">
+            <p class="tags"><span class="tag tag-research">Research</span><span class="tag tag-design">Design</span></p>
+            <h3><a href="projects/project-one.html">Project one title</a></h3>
+            <p>One-line summary of the problem and the outcome.</p>
+            <p class="role-line">Role: UX researcher and designer</p>
+          </div>
+        </li>
+        <li class="card" data-tags="design">
+          <img src="assets/images/project-2.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+          <div class="card-body">
+            <p class="tags"><span class="tag tag-design">Design</span></p>
+            <h3><a href="projects/project-two.html">Project two title</a></h3>
+            <p>One-line summary of the problem and the outcome.</p>
+            <p class="role-line">Role: Product designer</p>
+          </div>
+        </li>
+        <li class="card" data-tags="product research">
+          <img src="assets/images/project-3.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+          <div class="card-body">
+            <p class="tags"><span class="tag tag-research">Research</span><span class="tag tag-product">Product</span></p>
+            <h3><a href="projects/project-three.html">Project three title</a></h3>
+            <p>One-line summary of the problem and the outcome.</p>
+            <p class="role-line">Role: Product manager (student project)</p>
+          </div>
+        </li>
+        <li class="card" data-tags="product design">
+          <img src="assets/images/project-4.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+          <div class="card-body">
+            <p class="tags"><span class="tag tag-design">Design</span><span class="tag tag-product">Product</span></p>
+            <h3><a href="projects/project-four.html">Project four title</a></h3>
+            <p>One-line summary of the problem and the outcome.</p>
+            <p class="role-line">Role: Designer and product lead</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div class="prose">
+        <p>Write two or three short paragraphs here. Say who you are, what you study, what kind of problems you like, and what you are looking for next.</p>
+        <p>Add one personal detail so people remember you: something you make, collect, or care about outside of work.</p>
+      </div>
+    </section>
   </main>
-  <script src="js/main.js"></script>
+
+  <footer class="section wrap" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <p>Open to internships in UX research, design, and product management.</p>
+    <p class="actions">
+      <a href="mailto:khadijatahir55@gmail.com">khadijatahir55@gmail.com</a>
+      <a href="https://www.linkedin.com/in/khadija-tahir-8a05021a4" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+    </p>
+    <p class="small">© 2026 [Your Name]</p>
+  </footer>
 </body>
 </html>
