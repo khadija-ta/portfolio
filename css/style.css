@@ -1,8 +1,8 @@
 /* Fonts: self-hosted WOFF2 files go in assets/fonts/ */
 @font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url("../assets/fonts/inter-400.woff2") format("woff2")}
 @font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url("../assets/fonts/inter-500.woff2") format("woff2")}
-@font-face{font-family:"Fraunces";font-weight:400;font-style:normal;font-display:swap;src:url("../assets/fonts/fraunces-400.woff2") format("woff2")}
-@font-face{font-family:"Fraunces";font-weight:500;font-style:normal;font-display:swap;src:url("../assets/fonts/fraunces-500.woff2") format("woff2")}
+@font-face{font-family:"Newsreader";font-weight:400;font-style:normal;font-display:swap;src:url("../assets/fonts/newsreader-400.woff2") format("woff2")}
+@font-face{font-family:"Newsreader";font-weight:500;font-style:normal;font-display:swap;src:url("../assets/fonts/newsreader-500.woff2") format("woff2")}
 
 :root{
   --page:#F7F4EE; --surface:#EEEAE1; --ink:#1F1D24; --muted:#5A5750;
@@ -10,7 +10,7 @@
   --blue-tint:#E1E7F0; --plum-tint:#E8E3EF; --on-blue:#fff;
   --u:8px; --photo:clamp(176px,28vw,296px);
   --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --head:"Fraunces",Georgia,"Times New Roman",serif;
+  --head:"Newsreader",Georgia,"Times New Roman",serif;
   color-scheme:light dark;
 }
 @media (prefers-color-scheme:dark){
